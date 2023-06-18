@@ -25,12 +25,7 @@ public class ProductContoller {
 	@Autowired 
 	ProductServiceI productServiceI;
 	
-	
-//	@GetMapping("/products")
-	public List<Product> GetAllProducts() {
-		List<Product> allProduct = productServiceI.getAllProduct();
-		return allProduct;
-	}
+
 	
 	@PostMapping("/products")
 	public Product addProduct(@RequestBody Product product){
